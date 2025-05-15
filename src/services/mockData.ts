@@ -1,0 +1,120 @@
+import { Admin, Candidate, Company } from '../types';
+
+// Mock data for Admins
+export const mockAdmins: Admin[] = [
+  {
+    id: '1',
+    name: 'John Doe',
+    email: 'john.doe@example.com',
+    role: 'Super Admin',
+    status: 'active',
+    lastLogin: '2025-04-01T10:30:00',
+    createdAt: '2025-01-15T08:00:00',
+  },
+  {
+    id: '2',
+    name: 'Jane Smith',
+    email: 'jane.smith@example.com',
+    role: 'Admin',
+    status: 'active',
+    lastLogin: '2025-04-02T09:15:00',
+    createdAt: '2025-02-10T11:30:00',
+  },
+  {
+    id: '3',
+    name: 'Michael Johnson',
+    email: 'michael.johnson@example.com',
+    role: 'Moderator',
+    status: 'inactive',
+    lastLogin: '2025-03-15T14:45:00',
+    createdAt: '2025-02-28T10:00:00',
+  },
+];
+
+// Mock data for Candidates
+export const mockCandidates: Candidate[] = [
+  {
+    id: '1',
+    name: 'Alice Williams',
+    email: 'alice.williams@example.com',
+    phone: '+1 (555) 123-4567',
+    status: 'interviewing',
+    position: 'Frontend Developer',
+    experience: 3,
+    skills: ['React', 'TypeScript', 'CSS'],
+    createdAt: '2025-03-01T09:00:00',
+  },
+  {
+    id: '2',
+    name: 'Bob Anderson',
+    email: 'bob.anderson@example.com',
+    phone: '+1 (555) 987-6543',
+    status: 'new',
+    position: 'Backend Developer',
+    experience: 5,
+    skills: ['Node.js', 'Express', 'MongoDB'],
+    createdAt: '2025-03-15T14:30:00',
+  },
+  {
+    id: '3',
+    name: 'Carol Martinez',
+    email: 'carol.martinez@example.com',
+    phone: '+1 (555) 456-7890',
+    status: 'hired',
+    position: 'UX Designer',
+    experience: 4,
+    skills: ['Figma', 'UI/UX', 'Prototyping'],
+    createdAt: '2025-02-20T11:15:00',
+  },
+  {
+    id: '4',
+    name: 'David Wilson',
+    email: 'david.wilson@example.com',
+    phone: '+1 (555) 789-0123',
+    status: 'rejected',
+    position: 'Data Scientist',
+    experience: 2,
+    skills: ['Python', 'Machine Learning', 'SQL'],
+    createdAt: '2025-03-10T13:45:00',
+  },
+];
+
+// Mock data for Companies
+export const mockCompanies: Company[] = [
+  {
+    id: '1',
+    name: 'Acme Corporation',
+    industry: 'Technology',
+    size: '500-1000',
+    location: 'San Francisco, CA',
+    website: 'https://www.acmecorp.com',
+    contactName: 'Sarah Johnson',
+    contactEmail: 'sarah.johnson@acmecorp.com',
+    status: 'active',
+    createdAt: '2025-01-10T08:30:00',
+  },
+  {
+    id: '2',
+    name: 'Globex Industries',
+    industry: 'Manufacturing',
+    size: '1000+',
+    location: 'Chicago, IL',
+    website: 'https://www.globexindustries.com',
+    contactName: 'Mark Thompson',
+    contactEmail: 'mark.thompson@globex.com',
+    status: 'active',
+    createdAt: '2025-02-05T10:15:00',
+  },
+  {
+    id: '3',
+    name: 'Initech Solutions',
+    industry: 'Consulting',
+    size: '100-500',
+    location: 'Austin, TX',
+    website: 'https://www.initechsolutions.com',
+    contactName: 'Jennifer Lee',
+    contactEmail: 'jennifer.lee@initech.com',
+    status: 'inactive',
+    createdAt: '2025-01-22T09:45:00',
+  },
+];
